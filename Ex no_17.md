@@ -1,66 +1,41 @@
 # EX 17 C Program to compare two strings without using strcmp().
-
 ## DATE:
-08.06.2026
-
 ## AIM:
 To write a C Program to compare two strings without using strcmp().
 
 ## Algorithm
-
-1. Start the program.
-2. Declare two character arrays.
-3. Get two strings from the user.
-4. Compare the strings character by character using loop.
-5. If all characters are equal, display Strings are Equal.
-6. Otherwise, display Strings are Not Equal.
-7. Stop the program.
+1. Start.
+2. Define a variables.
+3. Write program to compare two strings using nested for loop and if statement.
+4. Read the value using scanf.
+5. Ask the user to make an input.
+6. Print out the answer.
+7. End.  
 
 ## Program:
-
-```c
+```
 #include <stdio.h>
-
-int main()
-{
-    char s1[50], s2[50];
-    int i = 0, flag = 0;
-
-    scanf("%s", s1);
-    scanf("%s", s2);
-
-    while(s1[i] != '\0' || s2[i] != '\0')
-    {
-        if(s1[i] != s2[i])
-        {
-            flag = 1;
-            break;
-        }
-
-        i++;
-    }
-
-    if(flag == 0)
-    {
-        printf("Strings are Equal");
-    }
-    else
-    {
-        printf("Strings are Not Equal");
-    }
-
-    return 0;
+int main() {
+ char str1[100], str2[100];
+ int i = 0, flag = 0;
+ scanf("%s", str1);
+ scanf("%s", str2);
+ while (str1[i] != '\0' || str2[i] != '\0') {
+ if (str1[i] != str2[i]) {
+ flag = 1;
+ break;
+ }
+ i++; } 
+if (flag == 0) 
+printf("Strings are equal.\n");
+else
+ printf("Strings are not equal.\n");
+ return 0;
 }
 ```
 
 ## Output:
-
-```text
-hello
-hello
-
-Strings are Equal
-```
+![image](https://github.com/user-attachments/assets/fa7a0432-214b-4603-9b42-e8d2b3a09d52)
 
 ## Result:
 Thus the program was executed and the output was verified successfully.
